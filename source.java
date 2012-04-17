@@ -12,13 +12,13 @@ public class BitmapTextureAtlasSource extends BaseTextureAtlasSource implements 
     {
     	super(0,0, pBitmap.getWidth(), pBitmap.getHeight());
         
-        mColors = new int[mTextureHeight * mTextureWidth];
+        mColors = new int[mTextureWidth * mTextureHeight];
         
-        for(int y = 0; y < mTextureHeight - 1; ++y)
+        for(int y = 0; y < mTextureHeight; ++y)
         {
-        	for( int x = 0; x < mTextureWidth - 1; ++x)
+        	for( int x = 0; x < mTextureWidth; ++x)
         	{
-        		mColors[x + y * mTextureHeight] = pBitmap.getPixel(x, y);
+        		mColors[x + y * mTextureWidth] = pBitmap.getPixel(x, y);
         	}
         }
     }
