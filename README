@@ -1,1 +1,1 @@
-This snippet shows how to convert an Android::Bitmap to a TextureSource usable by AndEngine GLSL 2.0.
+This snippet shows how to convert an Android::Bitmap to a TextureSource usable by AndEngine GLES 2.0.
